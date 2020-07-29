@@ -33,3 +33,33 @@ git version
 
 <img width="887" alt="스크린샷 2020-07-29 오전 11 11 08" src="https://user-images.githubusercontent.com/50133267/88748551-4450e400-d18c-11ea-9a80-2cd5ea460119.png">
 
+> git Repository 만들기
+su git 
+cd ~
+mkdir test.git
+
+깃 디렉토리 생성
+
+<img width="892" alt="스크린샷 2020-07-29 오전 11 16 24" src="https://user-images.githubusercontent.com/50133267/88748831-f8526f00-d18c-11ea-9eff-a6713db12845.png">
+
+cd test.git
+git init --bare --shared
+
+<img width="895" alt="스크린샷 2020-07-29 오전 11 18 21" src="https://user-images.githubusercontent.com/50133267/88748960-3fd8fb00-d18d-11ea-8dac-18c249243821.png">
+
+깃 저장소가 초기호 된 것을 확인 할 수 있다.
+
+>클론 받아보기
+내 pc에서 클론을 받아보자
+다운 받을 디렉토리로 이동 한 뒤  
+git clone ssh://git@127.0.0.1:9090/git/home/test.git
+
+pingerprint 어쩌구 나오면서 클론이 안된다면 ssh git@127.0.0.1:9090으로 한번 정상 접근한 뒤 다시 진행해보자
+
+
+![스크린샷 2020-07-29 오전 11 23 41](https://user-images.githubusercontent.com/50133267/88749376-1ec4da00-d18e-11ea-9edf-71c3bee517a6.png)
+
+정상적으로 클론을 받으 것을 확인했다.
+
+>푸쉬 후 다시 클론 받아보기
+디렉토리에 접근하여 파일을 하나 만든 뒤 푸쉬해보자
