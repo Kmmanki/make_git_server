@@ -63,3 +63,18 @@ pingerprint 어쩌구 나오면서 클론이 안된다면 ssh git@127.0.0.1:9090
 
 >푸쉬 후 다시 클론 받아보기
 디렉토리에 접근하여 파일을 하나 만든 뒤 푸쉬해보자
+test 폴더에 파일을 하나 만들었다면
+git add *
+git commit -m "test commit"
+git push origin master
+
+![스크린샷 2020-07-29 오전 11 30 04](https://user-images.githubusercontent.com/50133267/88749731-dfe35400-d18e-11ea-9f9b-3324ef4e9789.png)
+
+>재대로 푸쉬 되었는지 확인하기 위해 내 pc에 있던 test 디렉토리를 삭제 한 뒤 다시 클론 받기
+
+![스크린샷 2020-07-29 오전 11 33 12](https://user-images.githubusercontent.com/50133267/88749919-508a7080-d18f-11ea-9ea9-e9610d7bf740.png)
+
+깃에서 클론 받을 디렉토리에 내가 만들었던 doc 파일이 들어있는 것을 확인 할 수 있었다.
+
+추가적으로 접근 시 비밀번호를 계속하여 적는 것이 불편하다면 클라이언트의 RSA키를 서버에 등록하면 된다.
+
